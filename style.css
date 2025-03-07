@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #111;
+    --secondary-color: #FFFFFF;
+    --typo-color: rgb(210, 210, 210);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    flex-direction: column;
+}
+
+.main-heading {
+    background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.typo-color {
+    color: var(--typo-color);
+}
+
+.tabs {
+    background-color: var(--typo-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    height: 70px;
+    width: 70px;
+}
+
+.tabs i {
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.tabs:hover i {
+    color: var(--secondary-color);
+}
+
+.tabs:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
